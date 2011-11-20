@@ -75,7 +75,7 @@ set hlsearch    "Highlight search
 set expandtab
 set shiftwidth=4
 set softtabstop=4
-set tabstop=2
+set tabstop=8
 set textwidth=79
 
 "Move up and down a page
