@@ -51,6 +51,7 @@ map <D-9> 9gt
 map <D-0> :tablast<CR>
 "remap the next, last tab 
 "Maybe use D-left D-right instead? D-up/down jumps to start or end of page, not
+"too useful. It could be that it gets overriden in macvim??
 map <D-up> gt
 map <D-down> gT
 
@@ -72,15 +73,17 @@ set incsearch   "Incremental search
 set hlsearch    "Highlight search
 
 "Correct indention replace tabs with spaces
+"TODO: Should be set depending on the file
 set expandtab
 set shiftwidth=4
 set softtabstop=4
 set tabstop=8
 set textwidth=79
+set autoindent
 
 "Move up and down a page
-map <space> <c-f>
-map <backspace> <c-b>
+"map <space> <c-f>
+"map <backspace> <c-b>
 
 "Colorschemes
 colorscheme blackboard
