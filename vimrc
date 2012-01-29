@@ -51,13 +51,15 @@ map <D-9> 9gt
 map <D-0> :tablast<CR>
 "remap the next, last tab 
 "Maybe use D-left D-right instead? D-up/down jumps to start or end of page, not
-"too useful. It could be that it gets overriden in macvim??
+"too useful. It could be that it gets overridden in macvim??
 map <D-up> gt
 map <D-down> gT
 
 " Display invisible characters
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
+map <leader>n :NERDTree<CR>
+
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
@@ -75,6 +77,7 @@ set hlsearch    "Highlight search
 "Correct indention replace tabs with spaces
 "TODO: Should be set depending on the file
 set expandtab
+set smarttab    "Use shiftwidth, when tab is applied at the start of a line
 set shiftwidth=4
 set softtabstop=4
 set tabstop=8
