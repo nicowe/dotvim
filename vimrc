@@ -6,8 +6,12 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 " # Appearance
-set background=dark
-colorscheme blackboard
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
+colorscheme solarized
 
 "Map the leader
 let mapleader = "\<Space>"
